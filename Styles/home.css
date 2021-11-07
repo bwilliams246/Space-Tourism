@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    background: url('../assets/images/home/background-home-desktop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-container {
+    width: 95%;
+    margin: 51px auto 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 60%;
+    display: flex;
+    color: #f1f1f1;
+    background-color: rgba(255,255,255,0.08);
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.numbers-bold {
+    color: #fff;
+    font-weight: bold;
+    padding-right: .5rem;
+}
+
+.nav-item {
+    padding-right: 2.9rem;
+}
+
+.item-container:hover {
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
