@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #f1f1f1;
 }
 
 body {
@@ -20,6 +21,10 @@ body {
     justify-content: space-between;
 }
 
+.nav-logo {
+    cursor: pointer;
+}
+
 .navbar {
     width: 60%;
     display: flex;
@@ -34,6 +39,11 @@ body {
     padding: 1rem 0;
 }
 
+.item-container:hover {
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
+
 .numbers-bold {
     color: #fff;
     font-weight: bold;
@@ -44,7 +54,41 @@ body {
     padding-right: 2.9rem;
 }
 
-.item-container:hover {
-    border-bottom: 3px solid #fff;
-    cursor: pointer;
+.info-container {
+    width: 78%;
+    margin: 18% auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-info-box {
+    max-width: 44.5%;
+}
+
+.space-title {
+    margin: 1.5rem 0 1.5rem 10px;
+    font-size: 8.5rem;
+}
+
+.home-paragraph {
+    font-size: 20px;
+}
+
+.right-info-box {
+    width: 23%;
+    height: 23%;
+    margin: 7.3125rem 0 0 0;
+}
+
+.right-explorer-circle {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.explore {
+    color: #000;
+    padding: 46% 11%;
 }
