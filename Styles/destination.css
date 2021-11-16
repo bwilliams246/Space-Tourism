@@ -1,0 +1,52 @@
+.destination-header {
+    display: flex;
+    margin: 5rem auto 0 5%;
+}
+
+.page-number {
+    color: #aaa;
+    margin-right: 1rem;
+}
+
+.body-info-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.images-container {
+    width: 60%;
+    margin-top: 6rem;
+}
+
+.info-container {
+    width: 30%;
+}
+
+.body-nav-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.body-nav-item {
+    padding: .5rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.body-nav-item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+.current-img {
+    border-bottom: 2px solid #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.body-nav-spacer {
+    padding-right: 2rem;
+}
+
