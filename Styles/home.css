@@ -37,11 +37,12 @@ body {
 .item-container {
     display: flex;
     padding: 1rem 0;
+    border-bottom: 3px solid transparent;
 }
 
 .item-container:hover {
-    border-bottom: 3px solid #fff;
     cursor: pointer;
+    border-bottom: 3px solid #fff;
 }
 
 .numbers-bold {
@@ -51,6 +52,10 @@ body {
 }
 
 .nav-item {
+    color: #aaa;
+}
+
+.nav-spacer {
     padding-right: 2.9rem;
 }
 
