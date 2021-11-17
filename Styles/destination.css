@@ -15,12 +15,12 @@
 }
 
 .images-container {
-    width: 60%;
+    width: 55%;
     margin-top: 6rem;
 }
 
 .info-container {
-    width: 30%;
+    width: 45%;
 }
 
 .body-nav-container {
@@ -50,3 +50,43 @@
     padding-right: 2rem;
 }
 
+/* Info Body */
+.moon-container,
+.mars-container,
+.europa-container,
+.titan-container {
+    margin: 2rem 0 0 1rem;
+}
+
+.description-container {
+    min-height: 17.65rem;
+    border-bottom: .5px solid #f1f1f1;
+}
+
+.title-header {
+    font-size: 5.8rem;
+    padding-bottom: 2rem;
+}
+
+.planet-info {
+    font-size: 1.15rem;
+    line-height: 2.35rem;
+    padding-bottom: 4rem;
+}
+
+.planet-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.stat-header {
+    font-size: .85rem;
+    color: #aaa;
+}
+
+.stat {
+    margin-top: .85rem;
+    font-size: 1.825rem;
+}

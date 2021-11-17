@@ -7,27 +7,36 @@ const mars = document.getElementsByClassName('mars-img')[0]
 const europa = document.getElementsByClassName('europa-img')[0]
 const titan = document.getElementsByClassName('titan-img')[0]
 
+const moonInfo = document.getElementsByClassName('moon-container')[0]
+const marsInfo = document.getElementsByClassName('mars-container')[0]
+const europaInfo = document.getElementsByClassName('europa-container')[0]
+const titanInfo = document.getElementsByClassName('titan-container')[0]
+
 /* Event Listeners */
 for (title of navbarItems) {
     title.addEventListener('click' , (e) => {
         if (e.target.innerHTML == 'MOON') {
             console.log('moon displayed')
             displayMoon()
+            displayMoonInfo()
         }
 
         else if (e.target.innerHTML == 'MARS') {
             console.log('mars diplayed')
             displayMars()
+            displayMarsInfo()
         }
 
         else if (e.target.innerHTML == 'EUROPA') {
             console.log('europa displayed')
             displayEuropa()
+            displayEuropaInfo()
         }
 
         else if (e.target.innerHTML == 'TITAN') {
             console.log('titan displayed')
             displayTitan()
+            displayTitanInfo()
         }
         /* This Click Event Displays The Correct Image */
     })
@@ -96,6 +105,33 @@ function displayTitan() {
             item.classList.add('current-img')
         }
     }
+}
 
-    
+/* These Functions Display The Correct Description And Header */
+function displayMoonInfo() {
+    moonInfo.classList.remove('hide')
+    marsInfo.classList.add('hide')
+    europaInfo.classList.add('hide')
+    titanInfo.classList.add('hide')
+}
+
+function displayMarsInfo() {
+    marsInfo.classList.remove('hide')
+    moonInfo.classList.add('hide')
+    europaInfo.classList.add('hide')
+    titanInfo.classList.add('hide')
+}
+
+function displayEuropaInfo() {
+    europaInfo.classList.remove('hide')
+    moonInfo.classList.add('hide')
+    marsInfo.classList.add('hide')
+    titanInfo.classList.add('hide')
+}
+
+function displayTitanInfo() {
+    titanInfo.classList.remove('hide')
+    moonInfo.classList.add('hide')
+    marsInfo.classList.add('hide')
+    europaInfo.classList.add('hide')
 }
