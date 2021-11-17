@@ -1,3 +1,12 @@
+body {
+    max-height: 100vh;
+    background: url('../assets/images/destination/background-destination-desktop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .destination-header {
     display: flex;
     margin: 5rem auto 0 5%;
@@ -69,7 +78,7 @@
 }
 
 .planet-info {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     line-height: 2.35rem;
     padding-bottom: 4rem;
 }
