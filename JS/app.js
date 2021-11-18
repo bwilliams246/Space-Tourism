@@ -1,4 +1,4 @@
-/* ------- Destination HTML Page Styling------- */
+/* ------- Destination HTML Page Logic------- */
 
 /* Variables */
 const navbarItems = document.getElementsByClassName('body-nav-item')
@@ -134,4 +134,129 @@ function displayTitanInfo() {
     moonInfo.classList.add('hide')
     marsInfo.classList.add('hide')
     europaInfo.classList.add('hide')
+}
+
+
+
+/* ------- Crew HTML Page Logic ------- */
+
+/* Variables */
+const commanderInfo = document.getElementsByClassName('commander')[0]
+const missionSpecialistInfo = document.getElementsByClassName('mission-specialist')[0]
+const pilotInfo = document.getElementsByClassName('pilot')[0]
+const flightEngineerInfo = document.getElementsByClassName('flight-engineer')[0]
+
+const allCircles = document.getElementsByClassName('circle')
+const allCrewMembers = document.getElementsByClassName('img')
+
+/* Event Listeners */
+for (circle of allCircles) {
+    circle.addEventListener('click' , (e) => {
+        let selector = e.target.classList[0]
+
+        if (selector == 'selector-one') {
+            console.log('first')
+            displayCommanderInfo()
+            showCommander()
+        }
+
+        else if (selector == 'selector-two') {
+            console.log('second')
+            displaySpecialistInfo()
+            showMissionSpecialist()
+        }
+
+        else if (selector == 'selector-three') {
+            console.log('third')
+            displayPilotInfo()
+            showPilot()
+        }
+
+        else if (selector == 'selector-four') {
+            console.log('fourth')
+            displayEngineerInfo()
+            showFlightEngineer()
+        }
+    })
+}
+
+/* Functions */
+function displayCommanderInfo() {
+    commanderInfo.classList.remove('hide')
+    missionSpecialistInfo.classList.add('hide')
+    pilotInfo.classList.add('hide')
+    flightEngineerInfo.classList.add('hide')
+
+    for (circle of allCircles) {
+        circle.classList.remove('current-person')
+    }
+
+    document.getElementsByClassName('selector-one')[0].classList.add('current-person')
+}
+
+function displaySpecialistInfo() {
+    missionSpecialistInfo.classList.remove('hide')
+    commanderInfo.classList.add('hide')
+    pilotInfo.classList.add('hide')
+    flightEngineerInfo.classList.add('hide')
+
+    for (circle of allCircles) {
+        circle.classList.remove('current-person')
+    }
+
+    document.getElementsByClassName('selector-two')[0].classList.add('current-person')
+}
+
+function displayPilotInfo() {
+    pilotInfo.classList.remove('hide')
+    commanderInfo.classList.add('hide')
+    missionSpecialistInfo.classList.add('hide')
+    flightEngineerInfo.classList.add('hide')
+
+    for (circle of allCircles) {
+        circle.classList.remove('current-person')
+    }
+
+    document.getElementsByClassName('selector-three')[0].classList.add('current-person')
+}
+
+function displayEngineerInfo() {
+    flightEngineerInfo.classList.remove('hide')
+    commanderInfo.classList.add('hide')
+    missionSpecialistInfo.classList.add('hide')
+    pilotInfo.classList.add('hide')
+
+    for (circle of allCircles) {
+        circle.classList.remove('current-person')
+    }
+
+    document.getElementsByClassName('selector-four')[0].classList.add('current-person')
+}
+
+function showCommander() {
+    for (member of allCrewMembers) {
+        member.classList.add('hide')
+    }
+    document.getElementsByClassName('commander-img')[0].classList.remove('hide')
+}
+
+function showMissionSpecialist() {
+    for (member of allCrewMembers) {
+        member.classList.add('hide')
+    }
+    document.getElementsByClassName('mission-specialist-img')[0].classList.remove('hide')
+}
+
+function showPilot() {
+    for (member of allCrewMembers) {
+        member.classList.add('hide')
+    }
+    document.getElementsByClassName('pilot-img')[0].classList.remove('hide')
+}
+
+function showFlightEngineer() {
+    for (member of allCrewMembers) {
+        member.classList.add('hide')
+    }
+    document.getElementsByClassName('flight-engineer-img')[0].classList.remove('hide')
 }

@@ -17,7 +17,7 @@ body {
 
 .crew-header {
     display: flex;
-    margin: 5rem auto 0 5%;
+    margin: 5rem auto 0 7.2%;
 }
 
 .page-number {
@@ -29,17 +29,17 @@ body {
 .body-info-container {
     display: flex;
     max-height: 100vh;
-    width: 85%;
+    width: 80%;
     margin: 3rem auto 0 auto;
 }
 
 .info-container {
-    width: 50%;
+    width: 60%;
     margin-top: 4rem;
 }
 
 .images-container {
-    width: 50%;
+    width: 40%;
 }
 
 .info-header {
@@ -50,13 +50,13 @@ body {
 
 .info-name {
     font-size: 3rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     padding-bottom: 2rem;
 }
 
 .info {
     max-width: 77.5%;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     line-height: 1.825rem;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .nav-selector {
     display: flex;
-    margin: 6rem 0 0 1rem;
+    margin: 7rem 0 0 0;
 }
 
 .circle {
@@ -88,5 +88,6 @@ body {
 }
 
 .img {
-    width: 84%;
+    width: 100%;
+    height: auto;
 }
