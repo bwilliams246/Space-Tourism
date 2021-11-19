@@ -260,3 +260,57 @@ function showFlightEngineer() {
     }
     document.getElementsByClassName('flight-engineer-img')[0].classList.remove('hide')
 }
+
+
+
+/* ------- Tech HTML Page Logic ------- */
+
+/* Variables */
+const allTechCircles = document.getElementsByClassName('nav-circle')
+const allTechImages = document.getElementsByClassName('tech-img')
+
+/* Click Listeners */
+for (circle of allTechCircles) {
+    circle.addEventListener('click' , function (e) {
+        if (e.target.innerHTML == '1') {
+            currentCircle(0)
+            displayContent(0)
+        }
+
+        else if (e.target.innerHTML == '2') {
+            currentCircle(1)
+            displayContent(1)
+        }
+
+        else if (e.target.innerHTML == '3') {
+            currentCircle(2)
+            displayContent(2)
+        }
+    })
+}
+
+/* Functions */
+function displayContent(contentIndexNumber) {
+    let allContainers = document.getElementsByClassName('info-container')
+    let currentContainer = document.getElementsByClassName('info-container')[contentIndexNumber]
+    let currentImg = document.getElementsByClassName('tech-img')[contentIndexNumber]
+
+    for (box of allContainers) {
+        box.classList.add('hide')
+    }
+
+    for (img of allTechImages) {
+        img.classList.add('hide')
+    }
+
+    currentContainer.classList.remove('hide')
+    currentImg.classList.remove('hide')
+}
+
+function currentCircle(contentIndexNumber) {
+    for (circle of allTechCircles) {
+        circle.classList.remove('current-circle')
+    }
+
+    document.getElementsByClassName('nav-circle')[contentIndexNumber].classList.add('current-circle')
+}

@@ -17,7 +17,7 @@ body {
 
 .tech-header {
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin: 5rem auto 0 13%;
 }
 
@@ -40,6 +40,7 @@ body {
 .info-container {
     width: 45%;
     margin-top: 5.8125rem;
+    animation: content-change .2s ease-in;
 }
 
 .img-container {
@@ -90,4 +91,18 @@ body {
 
 img {
     width: 100%;
+}
+
+.tech-img {
+    animation: content-change .2s ease-in;
+} 
+
+@keyframes content-change {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
