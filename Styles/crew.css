@@ -17,7 +17,8 @@ body {
 
 .crew-header {
     display: flex;
-    margin: 5rem auto 0 7.2%;
+    font-size: 1.25rem;
+    margin: 5rem auto 0 13%;
 }
 
 .page-number {
@@ -30,7 +31,7 @@ body {
     display: flex;
     max-height: 100vh;
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0 11rem;
 }
 
 .all-info-boxes {
@@ -40,13 +41,14 @@ body {
 }
 
 .info-container {
-    margin-top: 4rem;
-    min-height: 13.3559375;
-    max-height: 13.3559375rem;
+    margin-top: 7rem;
+    min-height: 13.5rem;
+    max-height: 13.5rem;
+    animation: content-change .2s ease-in;
 }
 
 .images-container {
-    width: 40%;
+    width: 51%;
     min-height: 30.5rem;
     max-height: 30.5rem;
 }
@@ -60,7 +62,7 @@ body {
 .info-name {
     font-size: 3rem;
     /* margin-left: 1rem; */
-    padding-bottom: 2rem;
+    padding: .6rem 0;
 }
 
 .info {
@@ -76,7 +78,7 @@ body {
 
 .nav-selector {
     display: flex;
-    margin: 11rem 0 0 0;
+    margin: 8rem 0 0 0;
 }
 
 .circle {
@@ -90,6 +92,7 @@ body {
 .circle:hover {
     cursor: pointer;
     background-color: #fff;
+    transition: all .2s ease-in;
 }
 
 .current-person {
@@ -97,7 +100,8 @@ body {
 }
 
 .img {
-    width: 100%;
+    width: auto;
+    animation: content-change .2s ease-in;
 }
 
 .commander-img,
@@ -105,4 +109,14 @@ body {
 .pilot-img,
 .flight-engineer-img {
     height: 114%;
+}
+
+@keyframes content-change {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

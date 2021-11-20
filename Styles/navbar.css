@@ -10,10 +10,21 @@
     margin: 51px auto 0 5%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-logo {
     cursor: pointer;
+}
+
+.nav-line {
+    position: absolute;
+    top: 51%;
+    left: 8%;
+    width: 426px;
+    height: 1px;
+    border: 1px solid #aaa;
+    z-index: 1;
 }
 
 .navbar {
@@ -29,7 +40,6 @@
     display: flex;
     padding: 1rem 0;
     border-bottom: 3px solid transparent;
-    transition: all .2s ease-in;
 }
 
 .item-container:hover {
