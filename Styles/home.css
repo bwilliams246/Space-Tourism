@@ -1,3 +1,4 @@
+/* ------- Laptop Styling ------- */
 @media only screen and (min-width: 996px) {
     * {
         margin: 0;
@@ -118,6 +119,7 @@
     }
 }
 
+/* ------- Tablet Styling ------- */
 @media only screen and (max-width: 995px) {
     body {
         max-height: 100vh;
