@@ -187,6 +187,7 @@
     .info-text {
         color: #aaa;
         font-size: 1.2rem;
+        min-height: 116px;
     }
 
     .nav-selector {

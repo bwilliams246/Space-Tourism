@@ -273,18 +273,40 @@ const allTechImages = document.getElementsByClassName('tech-img')
 for (circle of allTechCircles) {
     circle.addEventListener('click' , function (e) {
         if (e.target.innerHTML == '1') {
-            currentCircle(0)
-            displayContent(0)
+            if (e.target === allTechCircles[3]) {
+                currentCircle(3)
+                displayContent(3)
+            }
+
+            else {
+                currentCircle(0)
+                displayContent(0)
+            }
         }
 
         else if (e.target.innerHTML == '2') {
-            currentCircle(1)
-            displayContent(1)
+            if (e.target === allTechCircles[4]) {
+                currentCircle(4)
+                displayContent(4)
+            }
+            
+
+            else {
+                currentCircle(1)
+                displayContent(1)
+            }
         }
 
         else if (e.target.innerHTML == '3') {
-            currentCircle(2)
-            displayContent(2)
+            if (e.target === allTechCircles[5]) {
+                currentCircle(5)
+                displayContent(5)
+            }
+            
+            else {
+                currentCircle(2)
+                displayContent(2)
+            }
         }
     })
 }
