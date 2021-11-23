@@ -336,3 +336,23 @@ function currentCircle(contentIndexNumber) {
 
     document.getElementsByClassName('nav-circle')[contentIndexNumber].classList.add('current-circle')
 }
+
+
+
+/* ------- Navbar Mobile Logic ------- */
+
+/* Variables */
+const hamburgerMenu = document.getElementsByClassName('hamburger-menu')[0]
+const openedMenu = document.getElementsByClassName('opened-menu')[0]
+const xBtn = document.getElementsByClassName('x-btn')[0]
+
+/* Click Listeners */
+hamburgerMenu.addEventListener('click' , function() {
+    openedMenu.classList.remove('hide')
+    hamburgerMenu.classList.add('hide')
+})
+
+xBtn.addEventListener('click' , () => {
+    hamburgerMenu.classList.remove('hide')
+    openedMenu.classList.add('hide')
+})
