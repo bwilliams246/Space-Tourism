@@ -183,3 +183,40 @@
         font-weight: 100;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+        max-height: 100vh;
+        background: url('../assets/images/home/background-home-mobile.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .home-sub-header {
+        margin-bottom: 0;
+    }
+
+    .space-title {
+        font-size: 5rem;
+    }
+
+    .home-paragraph {
+        width: 100%;
+        font-size: .89rem;
+        margin-top: .8rem;
+        text-align: center;
+    }
+
+    .right-info-box {
+        width: 150px;
+        height: 150px;
+        margin: 3rem 0 0 0;
+    }
+
+    .explore {
+        padding: 42% 11%;
+        font-size: 1.25rem;
+    }
+}
