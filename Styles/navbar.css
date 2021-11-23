@@ -87,7 +87,8 @@
         color: #f1f1f1;
     }
 
-    .mobile-navbar {
+    .mobile-navbar,
+    .hide {
         display: none;
     }
     
