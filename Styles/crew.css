@@ -8,6 +8,7 @@
         background-size: cover;
     }
     
+    .mobile-markup,
     .hide {
         display: none;
     }
@@ -134,6 +135,7 @@
         background-size: cover;
     } 
 
+    .mobile-markup,
     .hide {
         display: none;
     }
@@ -244,5 +246,85 @@
         100% {
             opacity: 1;
         }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        max-height: 100vh;
+        background: url('../assets/images/crew/background-crew-mobile.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    } 
+
+    .crew-header {
+        justify-content: center;
+    }
+
+    .desktop-markup,
+    .hide {
+        display: none;
+    }
+
+    .mobile-markup {
+        display: inline-block;
+    }
+
+    .nav-selector {
+        margin: 3rem 0;
+    }
+
+    .images-container {
+        width: 80%;
+        max-height: 223px;
+        border-bottom: .5px solid #f1f1f1;
+        justify-content: center;
+        margin-top: 1.8rem;
+        text-align: center;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .commander-img {
+        width: 177.22px;
+        height: 222px;
+    }
+
+    .mission-specialist-img {
+        width: 153.92px;
+        height: 222px;
+    }
+
+    .pilot-img {
+        width: 180.53px;
+        height: 222px;
+    }
+
+    .flight-engineer-img {
+        width: 226.15px;
+        height: 222px;
+    }
+
+    .info-header {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .info-name {
+        padding: .3rem 0 .7rem 0;
+    }
+
+    .info {
+        max-width: 96%;
+    }
+
+    .info-text {
+        font-size: 1rem;
+        color: #d0d6f9;
     }
 }
