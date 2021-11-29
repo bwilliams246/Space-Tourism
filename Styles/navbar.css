@@ -170,6 +170,7 @@
 
     .mobile-navbar {
         width: 95%;
+        min-height: 4.05rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -210,8 +211,8 @@
         height: 100vh;
         left: 8rem;
         position: absolute;
-        background-color: rgba(0 ,0 ,0 ,1);
-        animation: display-menu .2s ease-in;
+        backdrop-filter: blur(20px);
+        animation: display-menu .23s ease-in;
         z-index: 10;
     }
 
@@ -259,5 +260,12 @@
         100% {
             left: 8rem
         }
+    }
+}
+
+/* Desktop Styling */
+@media only screen and (min-width: 1439px) {
+    .nav-line {
+        width: 29rem;
     }
 }

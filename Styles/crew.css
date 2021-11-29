@@ -328,3 +328,30 @@
         color: #d0d6f9;
     }
 }
+
+@media only screen and (min-width: 1439px) {
+    .images-container {
+        min-height: 35rem;
+        max-height: 35rem;
+    }
+
+    .body-info-container {
+        width: 77%;
+    }
+
+    .info-text {
+        max-width: 25rem;
+        color: #d0d6f9;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1.7rem;
+    }
+
+    .commander-img,
+    .mission-specialist-img,
+    .pilot-img,
+    .flight-engineer-img {
+        height: 120.55%;
+    }
+}
